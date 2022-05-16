@@ -28,3 +28,13 @@
 
     mix-blend-mode: normal;
 }
+
+.link-style {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.link-style:hover {
+    color: inherit;
+    text-decoration: inherit;
+}

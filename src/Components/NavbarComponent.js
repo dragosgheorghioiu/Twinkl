@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styles/navbar.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Logo from '../Images/logo.png';
+import { Link } from 'react-router-dom';
 
 function NavbarComponent() {
     return (
@@ -19,17 +20,19 @@ function NavbarComponent() {
                     <Navbar.Collapse id='responsive-navbar-nav'>
                         <Nav className='ml-auto'>
                             <div className='box'>
-                                <Nav.Link href='/signin'>Sign in</Nav.Link>
+                                <Link to='/signin' className='link-style'>
+                                    Sign in
+                                </Link>
                             </div>
                             <div className='box'>
-                                <Nav.Link href='/aboutus'>
+                                <Link to='/aboutus' className='link-style'>
                                     Discover how sleep cycles work
-                                </Nav.Link>
+                                </Link>
                             </div>
                             <div className='box'>
-                                <Nav.Link href='/sleepfact'>
+                                <Link to='/sleepfact' className='link-style'>
                                     Sleep fact of the day
-                                </Nav.Link>
+                                </Link>
                             </div>
                         </Nav>
                     </Navbar.Collapse>
